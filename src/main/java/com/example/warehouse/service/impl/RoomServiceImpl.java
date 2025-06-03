@@ -33,6 +33,6 @@ public class RoomServiceImpl implements RoomService {
        room.setWarehouse(wareHouse);
        wareHouseRepository.save(wareHouse);
        roomRepository.save(room);
-       return roomMapper.toResponse(room);
+       return roomMapper.roomToResponse(room);
     }
 }

@@ -19,7 +19,7 @@ public class RoomMapper {
         return target;
     }
 
-    public RoomResponse toResponse(Room room){
+    public RoomResponse roomToResponse(Room room){
         if (room == null) {
             return null;
         }
@@ -28,4 +28,6 @@ public class RoomMapper {
             room.getName()
         );
     }
+
+
 }
